@@ -9,14 +9,10 @@ class URI {
                 condicao=false;
             }
             else{
-                for(int i=1; i<=valor; i++){
-                    if(i==valor){
-                        Console.WriteLine(i);
-                    }
-                    else{
-                        Console.Write("{0} ", i);
-                    }
-                }   
+                for(int i=1; i<valor; i++){
+                    Console.Write("{0} ", i);
+                }
+                Console.WriteLine(valor);   
             }
         }
     }
