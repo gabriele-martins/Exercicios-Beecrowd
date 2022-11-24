@@ -3,7 +3,7 @@ class URI {
     static void Main(string[] args) { 
         string input=Console.ReadLine();
         while(true){
-            if(input==String.Empty){
+            if(string.IsNullOrEmpty(input)){
                 break;
             }
             int n=int.Parse(input);
