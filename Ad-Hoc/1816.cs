@@ -8,7 +8,10 @@ class URI {
         while(m!=0){
             List<string> alfabeto=new List<string>(){"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
             string[] entrada=Console.ReadLine().Split();
-            int[] codigo=Array.ConvertAll(entrada,int.Parse);
+            int[] codigo=new int[m];
+            for(int i=0; i<m; i++){
+                codigo[i]=int.Parse(entrada[i]);
+            }
             string final="",aux="";
             for(int i=0; i<m; i++){
                 final+=alfabeto[codigo[i]-1];
@@ -18,6 +21,7 @@ class URI {
             }
             Console.WriteLine("Instancia {0}",inst);
             Console.WriteLine(final);
+            Console.WriteLine();
             inst++;
             m=int.Parse(Console.ReadLine());
         }
