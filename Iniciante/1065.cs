@@ -5,8 +5,6 @@ class URI {
         int cont=0;
         for(int i=0; i<5; i++){
             numeros[i]=-1*(int.Parse(Console.ReadLine()));
-        }
-        for(int i=0; i<5; i++){
             if(numeros[i]%2==0){
                 cont+=1;
             }

@@ -5,23 +5,18 @@ class URI {
         int par=0,impar=0,neg=0,pos=0;
         for(int i=0; i<5; i++){
             numeros[i]=int.Parse(Console.ReadLine());
-        }
-        for(int i=0; i<5; i++){
             if(numeros[i]%2==0){
                 par+=1;
             }
             else{
                 impar+=1;
             }
-        }
-        for(int i=0; i<5; i++){
             if(numeros[i]>0){
                 pos+=1;
             }
             else if(numeros[i]<0){
                 neg+=1;
             }
-            else{}
         }
         Console.WriteLine("{0} valor(es) par(es)",par);
         Console.WriteLine("{0} valor(es) impar(es)",impar);
